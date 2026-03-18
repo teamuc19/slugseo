@@ -10,7 +10,7 @@ export async function GET() {
 		const [products] = await connection.execute(`
 			SELECT slug, image_url
 			FROM products
-			WHERE slug IS NOT NULL
+			WHERE slug IS NOT NUL
 			ORDER BY name ASC
 		`);
 
